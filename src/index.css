@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wider uppercase transition-all duration-200 bg-brand-gold text-brand-dark hover:bg-brand-goldDark hover:text-white rounded-none shadow-sm;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wider uppercase transition-all duration-200 border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white rounded-none;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.btn-outline-light {
+  @apply inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wider uppercase transition-all duration-200 border-2 border-white text-white hover:bg-white hover:text-brand-dark rounded-none;
+  font-family: 'Barlow Condensed', sans-serif;
+}
