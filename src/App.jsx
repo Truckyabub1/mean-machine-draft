@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import TopBar from './components/TopBar';
-import Navbar from './components/Navbar';
+import React, { useState } from 'react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
@@ -23,7 +22,7 @@ export default function App() {
     }
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 90;
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -38,11 +37,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-brand-dark selection:bg-brand-gold selection:text-white">
-      {/* Top Banner Ribbon */}
-      <TopBar onOpenQuote={() => setIsQuoteOpen(true)} />
-
-      {/* Primary Sticky Header */}
-      <Navbar
+      {/* Authentic Header Matching meanmachine.ca */}
+      <Header
         activeSection={activeSection}
         onNavigate={handleNavigate}
         onOpenQuote={() => setIsQuoteOpen(true)}
@@ -52,7 +48,7 @@ export default function App() {
       <main className="flex-grow">
         <Hero
           onOpenQuote={() => setIsQuoteOpen(true)}
-          onExploreProjects={() => handleNavigate('projects')}
+          onExploreProjects={() => handleNavigate('about')}
         />
         <AboutSection onOpenQuote={() => setIsQuoteOpen(true)} />
         <ServicesSection onOpenQuote={() => setIsQuoteOpen(true)} />

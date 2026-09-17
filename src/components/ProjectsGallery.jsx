@@ -59,16 +59,21 @@ export default function ProjectsGallery({ onOpenQuote }) {
               className="bg-white border border-gray-200 group cursor-pointer overflow-hidden hover:border-brand-gold hover:shadow-2xl transition-all duration-300"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden bg-neutral-900">
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-brand-dark to-neutral-900 flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
-                <div className="absolute top-4 left-4 bg-brand-dark/90 text-brand-gold text-xs font-heading font-bold uppercase tracking-wider px-3 py-1 border-l-2 border-brand-gold">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center z-0 pointer-events-none">
+                  <span className="font-heading uppercase text-xl text-brand-gold font-bold">{project.title}</span>
+                  <span className="text-xs text-gray-400 font-sans mt-1">{project.location}</span>
+                </div>
+                <div className="absolute top-4 left-4 bg-brand-dark/90 text-brand-gold text-xs font-heading font-bold uppercase tracking-wider px-3 py-1 border-l-2 border-brand-gold z-20">
                   {project.category}
                 </div>
-                <div className="absolute bottom-4 right-4 bg-white/90 text-brand-dark p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute bottom-4 right-4 bg-white/90 text-brand-dark p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20">
                   <ArrowUpRight className="w-5 h-5" />
                 </div>
               </div>

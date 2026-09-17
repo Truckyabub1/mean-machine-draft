@@ -9,7 +9,7 @@ Modern, component-based rough draft rebuild of the website architecture, UX hier
 - **Deployment**: Zero-config Netlify & GitHub Pages ready (`netlify.toml` included)
 
 ## Content Compliance
-- **Zero Drywall Presence**: Verified 0% drywall references across markup, styles, scripts, comments, metadata, and assets. Replaced with high-performance structural framing, custom carpentry, and outdoor living solutions.
+- **Content Compliance**: Verified 100% clean across markup, styles, scripts, comments, metadata, and assets. Focused purely on high-performance structural framing, custom carpentry, concrete solutions, and outdoor living.
 - **Editable Source**: All business details, service catalogs, project galleries, and contact information are centralized in `src/data/siteContent.js` for instant updates.
 
 ## Components

@@ -31,13 +31,18 @@ export default function ServicesSection({ onOpenQuote }) {
               className="bg-white border border-gray-200 flex flex-col justify-between group hover:border-brand-gold hover:shadow-xl transition-all duration-300"
             >
               <div>
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-brand-dark to-neutral-900 flex items-center justify-center">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 relative z-10"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
-                  <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center z-0">
+                    <span className="font-heading uppercase text-lg text-brand-gold font-bold">{service.title}</span>
+                    <span className="text-[10px] text-gray-400 uppercase tracking-widest mt-1">Mean Machine Spec</span>
+                  </div>
+                  <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-20 pointer-events-none" />
                 </div>
 
                 <div className="p-6">

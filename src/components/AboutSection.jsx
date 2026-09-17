@@ -12,12 +12,18 @@ export default function AboutSection({ onOpenQuote }) {
           
           {/* Visual Column with layered images and stats badge */}
           <div className="lg:col-span-6 relative">
-            <div className="relative">
+            <div className="relative bg-gradient-to-br from-neutral-800 to-brand-dark min-h-[420px] overflow-hidden border border-neutral-700">
               <img
                 src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
                 alt="Construction Planning and Execution"
-                className="w-full h-[450px] object-cover shadow-xl"
+                className="w-full h-[450px] object-cover shadow-xl relative z-10"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center pointer-events-none z-0">
+                <Building className="w-16 h-16 text-brand-gold/40 mb-3" />
+                <span className="font-heading text-2xl uppercase tracking-wider text-white font-bold">Precision Construction</span>
+                <span className="text-xs text-gray-400 mt-1 uppercase tracking-widest">Alberta Master Trades</span>
+              </div>
               <div className="absolute -bottom-8 -right-4 sm:-right-8 bg-brand-dark text-white p-6 sm:p-8 max-w-[280px] sm:max-w-[320px] border-l-4 border-brand-gold shadow-2xl">
                 <span className="font-heading font-extrabold text-4xl text-brand-gold block">
                   100%
