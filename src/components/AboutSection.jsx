@@ -14,8 +14,8 @@ export default function AboutSection({ onOpenQuote }) {
           <div className="lg:col-span-6 relative">
             <div className="relative bg-gradient-to-br from-neutral-800 to-brand-dark min-h-[420px] overflow-hidden border border-neutral-700">
               <img
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
-                alt="Construction Planning and Execution"
+                src="/assets/alberta-craftsman.jpg"
+                alt="Alberta Trades Craftsman"
                 className="w-full h-[450px] object-cover shadow-xl relative z-10"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
@@ -49,15 +49,15 @@ export default function AboutSection({ onOpenQuote }) {
             </h2>
 
             <p className="text-brand-muted text-base sm:text-lg leading-relaxed mb-6 font-sans">
-              Mean Machine Construction is your premier partner for high-performance residential and commercial builds. Driven by uncompromising dedication to quality, efficiency, and client satisfaction, we treat every build as a lasting statement of craftsmanship.
+              Rooted in genuine Alberta pride, Mean Machine Construction builds welcoming outdoor havens and durable structures with honest blue-collar integrity. Every project is founded on mutual trust, kindness, and meticulous care—providing a secure, beautiful sanctuary for your family to enjoy across all walks of life.
             </p>
 
             <div className="space-y-3 mb-8 font-sans">
               {[
                 "Licensed, insured, and safety-compliant across Alberta",
-                "Specialized architectural carpentry and precision exterior decking",
-                "Engineered structural and interior framing solutions",
-                "Direct owner oversight and transparent milestone reporting"
+                "Handcrafted timber joinery, custom decking, and family havens",
+                "Engineered structural framing built for harsh prairie climates",
+                "Rooted in kindness, respectful communication, and complete transparency"
               ].map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-brand-gold mt-0.5 flex-shrink-0" />

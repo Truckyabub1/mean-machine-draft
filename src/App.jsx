@@ -48,7 +48,7 @@ export default function App() {
       <main className="flex-grow">
         <Hero
           onOpenQuote={() => setIsQuoteOpen(true)}
-          onExploreProjects={() => handleNavigate('about')}
+          onExploreProjects={() => handleNavigate('projects')}
         />
         <AboutSection onOpenQuote={() => setIsQuoteOpen(true)} />
         <ServicesSection onOpenQuote={() => setIsQuoteOpen(true)} />

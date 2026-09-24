@@ -1,14 +1,19 @@
 export const siteContent = {
   business: {
     name: "Mean Machine Construction",
-    tagline: "High-Performance Construction Solutions",
-    subheading: "Crafting Excellence with Precision & Artistry",
-    description: "At Mean Machine Construction, we deliver top-tier decking, custom carpentry, architectural framing, and specialty construction services for residential and commercial spaces across Alberta.",
+    tagline: "Alberta Hometown Craftsmanship & Family Sanctuaries",
+    subheading: "Rooted in Love, Kindness, and Honest Blue-Collar Integrity",
+    description: "Born in the heart of Alberta, Mean Machine Construction shapes enduring timber havens, custom decks, and resilient structural frames. Built on unconditional trust, heartfelt care, and authentic hometown pride—creating safe, welcoming spaces where every family can gather and flourish across all walks of life.",
     phone: "587-579-6656",
     phoneClean: "tel:5875796656",
     email: "meanmachinetrav@gmail.com",
     hours: "7 Days a Week",
-    locations: ["Calgary", "Okotoks", "Edmonton", "Southern & Central Alberta"],
+    locations: ["Okotoks", "Foothills County", "High River", "Diamond Valley", "Heritage Pointe", "Calgary", "Southern Alberta"],
+    pillars: [
+      { label: "Alberta Hometown Pride", detail: "True blue-collar integrity passed down through generations." },
+      { label: "Safe Family Spaces", detail: "Sanctuaries engineered for peace of mind, durability, and comfort." },
+      { label: "Love & Kindness", detail: "Respectful, honest service welcoming every neighbor and background." }
+    ]
   },
   
   navigation: [
@@ -23,27 +28,35 @@ export const siteContent = {
   processSteps: [
     {
       step: "01",
-      title: "Initial Consultation",
-      description: "We begin with a thorough discussion to understand your vision, requirements, and site parameters, establishing the foundation for our collaborative workflow.",
-      highlight: "Discovery & Site Assessment"
+      title: "Family Hearth & Vision",
+      subtitle: "Listening With Care & Kindness",
+      description: "Every build begins around your kitchen table. We sit down to understand your daily family routines, relaxation dreams, and backyard wishes, turning heartfelt ideas into lasting sanctuaries.",
+      highlight: "Listening In Kindness",
+      image: "/assets/phase-01-vision.jpg"
     },
     {
       step: "02",
-      title: "Design Phase",
-      description: "Our team crafts detailed architectural specifications and design plans tailored to your exact needs, ensuring complete alignment prior to construction.",
-      highlight: "Engineering & Material Sourcing"
+      title: "Honest Provincial Blueprint",
+      subtitle: "Total Transparency & Clear Pricing",
+      description: "Zero hidden fees or unexpected costs. We provide clear engineered specifications, upfront fixed pricing, and dependable timelines tailored to your family investment.",
+      highlight: "Honest Pricing",
+      image: "/assets/phase-02-blueprint.jpg"
     },
     {
       step: "03",
-      title: "Execution Phase",
-      description: "Implementation begins with our master tradesmen, maintaining rigorous quality benchmarks, site safety, and punctual timeline milestones.",
-      highlight: "Precision Craftsmanship"
+      title: "Quiet Care & Master Hands",
+      subtitle: "Respecting Your Home & Loved Ones",
+      description: "Our seasoned trades treat your property like our own neighborhood. Clean and safe sites daily, gentle consideration for children and pets, and precision in every timber cut.",
+      highlight: "Safe & Clean Build",
+      image: "/assets/phase-03-build.jpg"
     },
     {
       step: "04",
-      title: "Final Review",
-      description: "We conduct a thorough walkthrough and inspection with you, verifying every detail meets our uncompromising standards before project sign-off.",
-      highlight: "100% Quality Assurance"
+      title: "The Haven Celebration",
+      subtitle: "Generations of Joy & Safety",
+      description: "We hand over your completed outdoor living space with pride and lifelong local support—a safe, warm retreat for barbecues, laughter, and family milestones.",
+      highlight: "Lifelong Haven",
+      image: "/assets/phase-04-haven.jpg"
     }
   ],
 
@@ -51,108 +64,108 @@ export const siteContent = {
     {
       id: "decking",
       title: "Decking Services",
-      shortDesc: "Durable and stylish decking options that transform outdoor areas into functional, inviting living spaces.",
+      shortDesc: "Custom composite and cedar decking built for Okotoks and Foothills County backyards, creating functional, inviting outdoor living spaces.",
       features: ["Pressure-treated & Composite Decking", "Multi-tiered Structures", "Integrated Railings & Lighting", "Weatherproof Finishing"],
-      image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80"
+      image: "/assets/residential-deck.jpg"
     },
     {
       id: "carpentry",
       title: "Custom Carpentry",
-      shortDesc: "Architectural woodwork, timber framing, and custom exterior/interior millwork tailored to high-end specifications.",
+      shortDesc: "Heavy timber joinery, custom pergolas, and architectural millwork tailored to high-end Okotoks and Foothills properties.",
       features: ["Custom Pergolas & Gazebos", "Interior Feature Walls & Beams", "Custom Trim & Casing", "Heavy Timber Detailing"],
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+      image: "/assets/timber-joinery.jpg"
     },
     {
       id: "framing",
       title: "Structural & Interior Framing",
-      shortDesc: "Engineered commercial and residential framing solutions constructed with laser accuracy and robust structural integrity.",
-      features: ["Commercial Tenant Framing", "Residential Additions & Basements", "Load-bearing Modifications", "Subfloor & Wall Systems"],
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      shortDesc: "Engineered residential additions, basement framing, and structural custom home framing constructed with laser accuracy in Southern Alberta.",
+      features: ["Custom Home Framing", "Residential Additions & Basements", "Load-bearing Modifications", "Subfloor & Wall Systems"],
+      image: "/assets/structural-framing.jpg"
     },
     {
       id: "concrete",
       title: "Concrete Solutions",
-      shortDesc: "High-grade structural concrete pads, footings, decorative surfaces, and foundations designed for Alberta climates.",
-      features: ["Deck Footings & Piers", "Patios & Walkways", "Commercial Slabs", "Structural Grade Prep"],
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+      shortDesc: "Engineered concrete pads, decorative broom-finish patios, and reinforced deck footings designed for Alberta freeze-thaw cycles.",
+      features: ["Deck Footings & Piers", "Patios & Walkways", "Custom Residential Slabs", "Structural Grade Prep"],
+      image: "/assets/concrete-solutions.jpg"
     }
   ],
 
   features: [
     {
-      title: "Exceptional Craftsmanship",
-      description: "Our dedicated specialists focus on micro-level details and long-lasting durability across every residential and commercial build."
+      title: "Honest Hometown Integrity",
+      description: "Uncompromising ethics and transparency on every quote, consultation, and milestone—honoring our Alberta heritage."
     },
     {
-      title: "Timely Delivery",
-      description: "We strictly prioritize project milestones and schedules, delivering completed builds on target without ever cutting corners."
+      title: "Safe Family Sanctuaries",
+      description: "Each outdoor retreat and timber structure is engineered with caring precision to keep your loved ones secure."
     },
     {
-      title: "Professional Team",
-      description: "Certified, fully insured trades bringing decades of combined field expertise and professional on-site communication."
+      title: "Dedicated Master Trades",
+      description: "Decades of field experience and compassionate craftsmanship welcoming neighbors from all walks of life."
     },
     {
-      title: "Transparent Pricing",
-      description: "Comprehensive quotes with zero hidden charges, keeping you informed and confident throughout the entire engagement."
+      title: "Punctual & Dependable",
+      description: "Respecting your schedule and home, delivering on commitments on time without cutting corners."
     }
   ],
 
   projects: [
     {
       id: 1,
-      title: "Residential Decking Project",
+      title: "Residential Multi-Tier Deck",
       category: "Decking",
-      description: "A multi-tier composite outdoor decking solution featuring custom cedar privacy screens and embedded low-voltage illumination.",
+      description: "A multi-tier composite outdoor decking solution featuring custom cedar privacy screens, cable railings, and embedded step lighting.",
       location: "Calgary, AB",
-      image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=900&q=80"
+      image: "/assets/residential-deck.jpg"
     },
     {
       id: 2,
-      title: "Architectural Commercial Build",
-      category: "Commercial",
-      description: "Precision interior buildout and structural framing for a modern multi-suite office complex in downtown Calgary.",
-      location: "Downtown Calgary",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
+      title: "Precision Structural Framing Build",
+      category: "Framing",
+      description: "Laser-aligned structural lumber framing and engineered trusses constructed for an Alberta family residence addition.",
+      location: "Foothills County, AB",
+      image: "/assets/structural-framing.jpg"
     },
     {
       id: 3,
-      title: "Custom Renovation & Carpentry",
-      category: "Renovation",
-      description: "Full architectural revitalization honoring historic character with modern engineered timber and bespoke finishing.",
+      title: "Custom Timber Joinery & Pergola",
+      category: "Carpentry",
+      description: "Heavy Douglas fir timber posts, custom steel connector plates, and traditional mortise joinery overlooking prairie mountain views.",
       location: "Okotoks, AB",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+      image: "/assets/timber-joinery.jpg"
     },
     {
       id: 4,
-      title: "Luxury Estate Exterior Build",
+      title: "Foothill Family Living Sanctuary",
       category: "Residential",
-      description: "Turnkey outdoor living masterwork including cantilevered deck, covered pergola, and architectural concrete hardscaping.",
+      description: "Turnkey outdoor living haven including custom deck, covered timber pavilion, and architectural wood hardscaping.",
       location: "Edmonton, AB",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80"
+      image: "/deck-image-church.jpg"
     },
     {
       id: 5,
-      title: "Timber Frame Pavilion",
+      title: "Timber Frame Pavilion & Haven",
       category: "Carpentry",
-      description: "Hand-cut Douglas fir timber framing with mortise-and-tenon joints engineered for extreme Alberta winter loads.",
+      description: "Hand-cut Douglas fir timber framing with mortise-and-tenon joints engineered for extreme Alberta winter loads, built for generations of family gatherings.",
       location: "Foothills County, AB",
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80"
+      image: "/assets/timber-joinery.jpg"
     },
     {
       id: 6,
-      title: "Industrial Grade Concrete & Foundation",
+      title: "Decorative Concrete Patio & Footings",
       category: "Concrete",
-      description: "Engineered reinforced sub-base, helical pile integration, and structural slab placement for heavy equipment storage.",
-      location: "Calgary SE Industrial",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80"
+      description: "Exposed aggregate borders, broom-finish surface prep, and reinforced deck footings engineered for freeze-thaw cycles.",
+      location: "Calgary, AB",
+      image: "/assets/concrete-solutions.jpg"
     }
   ],
 
   testimonials: [
     {
-      author: "Commercial Facility Manager",
-      company: "West Tech Commercial Park",
-      quote: "The Mean Machine crew operated with unmatched precision. Deadlines were respected, communication was constant, and the finished build was flawless."
+      author: "Local Homeowner",
+      company: "Okotoks, AB",
+      quote: "The Mean Machine crew operated with unmatched precision. They respected our family's schedule, communication was constant, and the finished deck was flawless."
     },
     {
       author: "Homeowner",
